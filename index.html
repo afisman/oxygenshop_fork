@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav__container">
+        <h1 class="nav__title">OXYGENShop</h1>
+        <button class="btn btn__menu" id="open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="#67cef7"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <button class="btn btn__close--click" id="close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="#67cef7"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </button>
+
+        <ul class="nav__list" id="list">
+          <a class="nav__item nav__item--first">
+            <li class="nav__item nav__item--first">Why Us</li>
+          </a>
+          <a class="nav__item">
+            <li class="nav__item">Benefits</li>
+          </a>
+          <a class="nav__item">
+            <li class="nav__item">Prices</li>
+          </a>
+          <a class="nav__item">
+            <li class="nav__item">Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero__container">
+        <h1 class="hero__title">Sell More!</h1>
+        <p class="hero__text">
+          Open shop on our platform and increase your sales
+        </p>
+        <button class="hero__button">Open your shop</button>
+        <img
+          class="hero__img"
+          src="https://s3-alpha-sig.figma.com/img/c3f9/6a42/6648411f57f04aff84de5d247f55d2a8?Expires=1684108800&Signature=X3b1BDZ4IHrB7sIVmkr7DsRj4EaRhzc4xOJxamh-Eh4AiszeqxqzJ8~0LyUU3IP2DVoIzhqf9K0pGcNgkNDb2pQbcN5wwkv3SHH-t0lSx4ECLTXyLrrV4p5fXIYrJ5iF2a2yjuxY4OsQYvFEHMf-JlFj2A1gw~xPFY99Pt8mS0CmRNud-V1ccRRpbl7AfIMFdYf0gAwOxpDZNULHZuo7mp2enuOP81bRjN8jtpjLMF9BCBJtpDoPwJ3tDV0lQO2vu8XVJ3rEsKN7tP3nXUMp1uFeBXe~wGgVtbMmlqSgRPpCGBbUjZSwqrfP2OyX-0WUG2iQC4lXBxtkz~3ZpzdCbg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          alt=""
+        />
+      </div>
+      <div class="why-us__container">
+        <h1 class="why-us__title">
+          The most popular sales platform in country
+        </h1>
+        <div class="why-us__numbers">
+          <div class="">
+            <div class="dot__container">
+              <span class="dot dot--red"></span>
+              <span
+                ><svg
+                  width="45"
+                  fill="#000000"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M15.992 2c3.396 0 6.998 2.86 6.998 4.995v4.997c0 1.924-0.8 5.604-2.945 7.293-0.547 0.43-0.831 1.115-0.749 1.807 0.082 0.692 0.518 1.291 1.151 1.582l8.703 4.127c0.068 0.031 0.834 0.16 0.834 1.23l0.001 1.952-27.984 0.002v-2.029c0-0.795 0.596-1.045 0.835-1.154l8.782-4.145c0.63-0.289 1.065-0.885 1.149-1.573s-0.193-1.37-0.733-1.803c-2.078-1.668-3.046-5.335-3.046-7.287v-4.997c0.001-2.089 3.638-4.995 7.004-4.995zM15.992-0c-4.416 0-9.004 3.686-9.004 6.996v4.997c0 2.184 0.997 6.601 3.793 8.847l-8.783 4.145s-1.998 0.89-1.998 1.999v3.001c0 1.105 0.895 1.999 1.998 1.999h27.986c1.105 0 1.999-0.895 1.999-1.999v-3.001c0-1.175-1.999-1.999-1.999-1.999l-8.703-4.127c2.77-2.18 3.708-6.464 3.708-8.865v-4.997c0-3.31-4.582-6.995-8.998-6.995v0z"
+                    ></path>
+                  </g></svg
+              ></span>
+            </div>
+            <h1>100000+</h1>
+            <p>daily entries</p>
+          </div>
+          <div>
+            <div class="dot__container">
+              <span class="dot dot--blue"></span>
+              <span>
+                <svg
+                  width="45"
+                  version="1.0"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 64 64"
+                  enable-background="new 0 0 64 64"
+                  xml:space="preserve"
+                  fill="#000000"
+                  stroke="#000000"
+                  stroke-width="1.8559999999999999"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        fill="#231F20"
+                        d="M63.934,31.645c-0.015-0.037-0.256-0.646-0.74-1.648C60.597,24.627,51.02,8.004,32,8.004 c-22.568,0-31.842,23.404-31.934,23.641c-0.089,0.231-0.089,0.487,0,0.719C0.158,32.6,9.432,56.004,32,56.004 c19.01,0,28.587-16.605,31.189-21.983c0.486-1.007,0.729-1.62,0.744-1.657C64.022,32.132,64.022,31.876,63.934,31.645z M32,54.004 c-19.686,0-28.677-19.123-29.917-22.001C3.321,29.121,12.288,10.004,32,10.004c19.686,0,28.677,19.123,29.917,22.001 C60.679,34.887,51.712,54.004,32,54.004z"
+                      ></path>
+                      <path
+                        fill="#231F20"
+                        d="M32,16.008c-8.837,0-16,7.163-16,16s7.163,16,16,16s16-7.163,16-16S40.837,16.008,32,16.008z M32,46.008 c-7.732,0-14-6.268-14-14s6.268-14,14-14s14,6.268,14,14S39.732,46.008,32,46.008z"
+                      ></path>
+                      <path
+                        fill="#231F20"
+                        d="M32,24.008c-4.418,0-8,3.582-8,8s3.582,8,8,8s8-3.582,8-8S36.418,24.008,32,24.008z M32,38.008 c-3.313,0-6-2.687-6-6s2.687-6,6-6s6,2.687,6,6S35.313,38.008,32,38.008z"
+                      ></path>
+                      <path
+                        fill="#231F20"
+                        d="M32,28.004c-0.553,0-1,0.447-1,1s0.447,1,1,1c1.104,0,2,0.896,2,2c0,0.553,0.447,1,1,1s1-0.447,1-1 C36,29.795,34.209,28.004,32,28.004z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </span>
+            </div>
+            <h1>2000000+</h1>
+            <p>seen products every day</p>
+          </div>
+          <div>
+            <div class="dot__container">
+              <span class="dot dot--green"></span>
+              <span
+                ><svg
+                  width="45"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 26.001 26.001"
+                  xml:space="preserve"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        style="fill: #030104"
+                        d="M25.911,17.597c0.229,0.503,0.007,1.096-0.496,1.324l-11,5c-0.131,0.06-0.272,0.09-0.414,0.09 c-0.099,0-0.198-0.015-0.294-0.044l-13-4c-0.528-0.163-0.824-0.723-0.662-1.25c0.162-0.528,0.723-0.827,1.25-0.662l12.638,3.889 l10.654-4.843C25.095,16.868,25.684,17.096,25.911,17.597z M13.933,17.944L1.295,14.055c-0.527-0.165-1.087,0.134-1.25,0.662 c-0.163,0.527,0.134,1.087,0.662,1.25l13,4c0.096,0.029,0.195,0.044,0.294,0.044c0.142,0,0.283-0.03,0.414-0.09l11-5 c0.503-0.229,0.725-0.821,0.496-1.324c-0.228-0.501-0.816-0.726-1.324-0.496L13.933,17.944z M0.002,11.061 c-0.021-0.42,0.223-0.808,0.61-0.972l7.301-3.077C9.35,6.406,10.034,5.65,10.034,2.99c0-0.307,0.141-0.598,0.383-0.787 c0.242-0.19,0.557-0.257,0.856-0.184l12.939,3.188c0.446,0.11,0.761,0.511,0.761,0.971V6.33c0.001,2.958,0.002,4.911-3.621,6.438 c-2.425,1.022-6.88,3.125-6.924,3.147c-0.134,0.064-0.281,0.096-0.427,0.096c-0.099,0-0.198-0.015-0.294-0.044l-13-4 C0.305,11.843,0.023,11.481,0.002,11.061z M3.924,10.864l10,3.078c1.112-0.523,4.562-2.136,6.65-3.016 c2.211-0.932,2.385-1.649,2.397-3.964l-10.99-2.709c-0.193,2.052-0.971,3.624-3.29,4.602L3.924,10.864z"
+                      ></path>
+                    </g>
+                  </g></svg
+              ></span>
+            </div>
+            <h1>10000+</h1>
+            <p>added posts daily</p>
+          </div>
+        </div>
+      </div>
+      <div class="benefits__container">
+        <div class="benefits__card">
+          <span class="bg bg--red"></span>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/c3de/4c3c/968152a9810c2dd0dfe5197fa1160c1c?Expires=1684108800&Signature=S6s9LFGkmffJcZKL4KSjDw3sN8Xg4gH9hK32qIkKv~mQJX5IBDqs4lOI1jcHHRj-icIkrhr5OiDlz5Rwnd0p5QEwYXxRht5N9gWjmQRwfeSB-NwZ~P33SYaseP2dsKEuN6eZE-jMrudv9CNSEhIyjIXzT5eiG1CnBQ~fIGq4Fqefpg5ofLJtgY~inMwWb5qLrd5iSCyEVahUHVGGahIaBPhyeDN9lL1I086yq~glvtp3eEeNkPBx000KmgYTKnDeeVrCcu4aGI6e6UdBvNWcrQ840g~PYpI81BqLBX6LIUskrz~Bk42rm0kl1Ye4nzbDN3xcmP8cvESiypsecgWrIw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <h1 class="title">Be always First</h1>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+            quam repudiandae non magni dolores eveniet error impedit ex illum!
+            Nobis.
+          </p>
+        </div>
+        <div class="benefits__card">
+          <span class="bg bg--blue"></span>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/81b3/6804/cfa426ef95f85cfe95fc8ff2cf7795da?Expires=1684108800&Signature=N4U00ZcpHvrkjypieZEgCtIiTOPQX1h5et-KbJEdmAez8SO3GsSwzmRqLGWlB0Lj~bLW4nz~ZGTfqHdNVK7cdHcfVgKAfujrNC6FiRLh7BlBm0KTnx9sWZqU4-S5iHhLfRT5XWxr3XPixqcBNLHQpnNi5NHKHhSwZUGyLXyIrWFb-LI9PItWY~RLqQzrg5wBXTtch7BFmk-iT9BOG2QI8COv291FIN-PP6CV2ckFUL8Tf3Dxx10EnIpL22BKoXQo5LOdlLfkRrijPGoNatqkEU6QDiu~sopFf3pYeWl6jOiaFp19r5DrLjEv3IO6zIEI3E9t9tI6Wx66rloip1yPdA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+          />
+          <h1 class="title">Your shop is where you are!</h1>
+          <p class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+            perferendis laborum provident possimus quasi labore placeat velit
+            repellendus mollitia asperiores.
+          </p>
+        </div>
+        <div class="benefits__card">
+          <h1 class="title">Increase recognition your brand!</h1>
+          <p class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+            architecto ab incidunt totam animi tempore magnam similique
+            repellendus at quo voluptate expedita error? Odit, quae quaerat.
+            Dolores, quis? Aliquid quam quas.
+          </p>
+          <span class="bg bg--green"></span>
+          <img class="img"
+            src="https://s3-alpha-sig.figma.com/img/0a4f/9edb/b58a61ad9af3bec050306223d00a9ed8?Expires=1684108800&Signature=jXZgvVBDQ1zvNG8J-mRMKhOE~dXUoXqITzRmxhLUT0OaaRzTB8zG1ULLVJDQZvdANPMcL-I98vumx09P~hp14EFEKdLW~U5wqyTrvanpy-xapAfIXJi6zwcuaQtUIa31WBP7pgZ1R35N416ZZw4fQz66EDjzYifaSKEqCYUXuzGOgeusQmabA64oBtY3OdR807H9AQk-Lrk-xf~mOJaw~fHb-hn3abdhdDxyA5BTiGqlHCR2z-v2Tekyh8UbRgxXFD00D3dPcfmRdpl8rNJe97zAJqJpQKVU8jq5bfYB1kCPLn4S0biXNq5TV2W25gBsdXS2KdiPdX72Co84EaO8tg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt="" />
+        </div>
+       </div>
+       <div class="pricing__container">
+            <div class="pricing__card pricing__card--red">
+                <div>
+                  <h1 class="title"></h1>
+                  <p class="price"></p>
+                </div>
+                <ul class="description">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <button class="btn btn--red"></button>
+            </div>
+            <div class="pricing__card pricing__card--blue">
+              <div>
+                <h1 class="title"></h1>
+                <p class="price"></p>
+                <p class="limited"></p>
+              </div>
+              <ul class="description">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <button class="btn btn--blue"></button>
+            </div>
+            <div class="pricing__card pricing__card--green">
+              <div>
+                <h1 class="title"></h1>
+                <p class="price"></p>
+                <p class="limited"></p>
+              </div>
+              <ul class="description">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <button class="btn btn--green "></button>
+            </div>
+       </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
