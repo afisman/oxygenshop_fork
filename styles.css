@@ -1,14 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
 }
 
 .nav__container {
-  width: 100%;
   text-align: center;
-  box-shadow: 0px 3px 1px #dcdcdc;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  box-shadow: 0px 10px 10px #dcdcdc;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .nav__title {
   display: inline;
@@ -20,6 +26,7 @@ body {
   color: #58bbde;
 }
 .nav__list {
+  margin-top: 20px;
   list-style-type: none;
   text-align: left;
   padding-left: 35px;
@@ -45,15 +52,6 @@ body {
 .nav__item :hover {
   color: black;
 }
-@media (min-width: 375px) {
-  .nav__container {
-    width: 100%;
-    text-align: center;
-    box-shadow: 0px 3px 1px #dcdcdc;
-    padding-top: 5px;
-    padding-bottom: 10px;
-  }
-}
 
 .btn {
   border: none;
@@ -78,6 +76,7 @@ body {
   font-size: 40px;
   font-weight: 100;
   font-family: "Raleway", sans-serif;
+  margin-bottom: 30px;
 }
 .hero__text {
   font-family: Arial, Helvetica, sans-serif;
@@ -85,7 +84,7 @@ body {
   max-width: 250px;
   margin: 0 auto;
   line-height: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .hero__button {
   background-color: #08a6e4;
@@ -100,6 +99,7 @@ body {
   font-weight: 600;
   box-shadow: 0px 3px 10px #31b6de;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 .hero__img {
   margin-top: 50px;
@@ -118,12 +118,14 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .why-us__numbers h1 {
   font-weight: 900;
   font-size: 20px;
   letter-spacing: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 .why-us__numbers p {
   color: #a5a5a5;
@@ -159,21 +161,27 @@ body {
   max-width: 375px;
   background-color: #f7f7f7;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 40px;
   padding: 30px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+}
+.benefits__container .img {
+  position: relative;
+  z-index: 1;
+  margin-right: 20px;
 }
 .benefits__card {
-  background-color: #FFF;
+  background-color: #fff;
   border: 1px solid #dcdcdc;
   margin: 0 auto;
   position: relative;
-  padding: 10px;
-  margin-bottom: 40px;
-  padding-top: 30px;
-  padding-bottom: 0px;
+  padding: 20px;
+  margin-top: 40px;
+  padding-bottom: 20px;
   z-index: 1;
+}
+.benefits__card__one {
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 .benefits__card .title {
   font-family: "Raleway", sans-serif;
@@ -182,18 +190,13 @@ body {
   text-align: left;
   margin-bottom: 40px;
   max-width: 250px;
+  margin-top: 20px;
 }
 .benefits__card .text {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 22px;
   font-size: 15px;
   text-align: left;
-}
-.benefits__card .img {
-  height: 130px;
-  width: 280px;
-  margin-top: 20px;
-  margin-right: 20px;
 }
 .benefits__card .bg {
   display: inline-block;
@@ -205,7 +208,7 @@ body {
   width: 80px;
   border-radius: 20%;
   left: 180px;
-  top: 20px;
+  top: 50px;
   transform: rotate(45deg);
   background-color: #fb3b64;
 }
@@ -214,13 +217,259 @@ body {
   width: 140px;
   border-radius: 100%;
   left: 65px;
-  top: 30px;
+  top: 15px;
   background-color: #08a6e4;
 }
 .benefits__card .bg--green {
-  height: 160px;
+  height: 180px;
   width: 314px;
   left: 0px;
-  top: 350px;
+  top: 335px;
+  border-radius: 5px;
   background-color: #55dfb4;
+}
+
+.pricing__title {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+.pricing__card {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 5%;
+  display: flex;
+  padding: 20px 20px 40px 20px;
+  position: relative;
+  height: 250px;
+  align-items: center;
+}
+.pricing__card .text-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.pricing__card .description {
+  list-style-type: none;
+  width: 60%;
+  font-family: "Open Sans", sans-serif;
+}
+.pricing__card .description li {
+  margin-top: 10px;
+}
+.pricing__card .description li img {
+  margin-right: 10px;
+}
+.pricing__card .title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+.pricing__card .price {
+  font-family: "Open sans", sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+}
+.pricing__card .limited {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+}
+.pricing__card .btn {
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  padding: 15px 60px;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.pricing__card .btn--red {
+  background-color: #fb3b64;
+}
+.pricing__card .btn--blue {
+  background-color: #07ace6;
+  left: 27%;
+}
+.pricing__card .btn--green {
+  background-color: #55dfb4;
+}
+.pricing__card--red {
+  border: 1px solid #fb3b64;
+  width: 80%;
+}
+.pricing__card--red .price {
+  color: #fb3b64;
+}
+.pricing__card--blue {
+  border: 1px solid #07ace6;
+  width: 90%;
+  box-shadow: 1px 1px 10px #07ace6;
+}
+.pricing__card--blue .price {
+  color: #07ace6;
+}
+.pricing__card--green {
+  border: 1px solid #55dfb4;
+  width: 80%;
+}
+.pricing__card--green .price {
+  color: #55dfb4;
+}
+
+.contact__container {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  padding-left: 20px;
+}
+.contact__container .title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.contact__container .text {
+  font-family: "Open sans", sans-serif;
+  margin-bottom: 30px;
+}
+.contact__container .contact-data {
+  font-family: "Open sans", sans-serif;
+  color: #aaa3a3;
+  display: flex;
+  margin-bottom: 10px;
+}
+.contact__container img {
+  align-items: center;
+  margin-right: 10px;
+}
+.contact__container form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__container form .label {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-family: "Open sans", sans-serif;
+  color: #08a6e4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact__container form .input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-image: none;
+  flex: 1;
+  color: #000;
+  font-size: 1em;
+  border-bottom: 1px #d3d3d3 solid;
+  font-family: "Open sans", sans-serif;
+}
+.contact__container form .checkbox-container {
+  display: flex;
+  align-items: start;
+  margin-top: 30px;
+  gap: 10px;
+}
+.contact__container form .checkbox-container input[type=checkbox] {
+  margin-top: 10px;
+}
+.contact__container form .checkbox-container label {
+  color: #aaa3a3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+.contact__container form .btn-container {
+  display: flex;
+  justify-content: end;
+}
+.contact__container form button {
+  width: 70%;
+  margin-top: 30px;
+  padding: 20px 40px;
+  border-radius: 50px;
+  background-color: #08a6e4;
+  border: none;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px #08a6e4;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px -10px 10px #dcdcdc;
+}
+.footer__text h1 {
+  font-weight: 100;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  color: #58bbde;
+  margin-bottom: 5px;
+}
+.footer__text p {
+  color: #aaa3a3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+.footer__social {
+  display: flex;
+  gap: 20px;
+}
+
+.checkbox {
+  height: 150px;
+  margin-top: 30px;
+}
+.checkbox__container {
+  position: absolute;
+  display: flex;
+  align-items: start;
+}
+.checkbox__container input[type=checkbox] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.checkbox__container label {
+  width: 315px;
+  color: #AFAFAF;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+.checkbox__container input[type=checkbox]:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 10px;
+  color: #08a6e4;
+  display: none;
+}
+.checkbox__container input[type=checkbox]:hover {
+  border: 1px solid #08a6e4;
+}
+.checkbox__container input[type=checkbox]:checked:after {
+  display: block;
 }/*# sourceMappingURL=styles.css.map */
