@@ -9,47 +9,60 @@ body {
   margin: 0 auto;
 }
 
+//---------MOBILE---------------------------------------------
+
 .nav {
   &__container {
-    display: flex;
-    justify-content: space-around;
+    display: block;
+    text-align: left;
     box-shadow: 0px 10px 10px #dcdcdc;
     padding-top: 20px;
     padding-bottom: 20px;
-    align-items: center;
   }
 
   &__title {
+    width: 30%;
+    display: inline-block;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 28px;
     font-family: "Raleway", sans-serif;
-    margin-right: 100px;
-    margin-left: 10px;
+    margin-right: 50%;
+    margin-left: 5%;
     color: #58bbde;
   }
 
   &__list {
-    display: flex;
-    gap: 100px;
+    display: none;
     margin-top: 20px;
     list-style-type: none;
     text-align: left;
+    padding-left: 35px;
     cursor: pointer;
+
+    &--active {
+      box-shadow: none;
+      display: block;
+    }
+  }
+
+  &__li {
+    margin-bottom: 14px;
   }
 
   &__item {
     color: #a8a8a8;
-    padding: 18px;
+    font-size: 10px;
     text-decoration: none;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 900;
     font-size: smaller;
     font-family: "Open Sans", sans-serif;
+    padding: 0;
 
     &--first {
       color: black;
-      border-bottom: 3px solid #08a6e4;
+      border: none;
     }
 
     :hover {
@@ -59,7 +72,21 @@ body {
 }
 
 .btn {
-  display: none;
+  border: none;
+  background: none;
+  display: inline-block;
+
+  &__menu--click {
+    display: none;
+  }
+
+  &__close {
+    display: none;
+
+    &--click {
+      display: none;
+    }
+  }
 }
 
 .hero {
@@ -77,33 +104,33 @@ body {
   }
 
   &__text {
+    width: 70%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    width: 100%;
     margin: 0 auto;
     line-height: 22px;
     margin-bottom: 30px;
   }
 
   &__button {
-    width: 20%;
+    width: 70%;
     background-color: #08a6e4;
     color: #ffffff;
     border-radius: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     box-shadow: 0px 3px 10px #31b6de;
+    margin-bottom: 40px;
     cursor: pointer;
   }
 
   &__img {
-    width: 90%;
-    height: full;
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
   }
 }
 
@@ -111,23 +138,21 @@ body {
   &__container {
     text-align: center;
     font-family: "Raleway", sans-serif;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
 
   &__title {
     font-weight: 100;
     line-height: 42px;
-    max-width: 50%;
+    max-width: 270px;
     text-align: center;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
   }
 
   &__numbers {
-    display: flex;
-    justify-content: center;
-    gap: 150px;
+    display: block;
 
     h1 {
       font-weight: 900;
@@ -150,60 +175,36 @@ body {
   &__container {
     position: relative;
   }
-
   height: 55px;
   width: 55px;
   border-radius: 50%;
-  display: inline-block;
   position: absolute;
   z-index: -1;
-  left: 30px;
+  right: 50%;
   top: -3px;
 
   &--red {
     background-color: #fb3b64;
   }
-
   &--blue {
-    left: 40px;
     background-color: #08a6e4;
   }
-
   &--green {
     background-color: #55dfb4;
-    left: 10px;
   }
 }
 
 .benefits {
   &__container {
-    margin: 0 auto;
     width: 100%;
     background-color: #f7f7f7;
     text-align: center;
     margin-top: 40px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  &__card-image {
-    display: flex;
-    width: 50%;
-    margin: 0 auto;
-    img {
-      z-index: 1;
-      height: 200px;
-      margin-top: 120px;
-      margin-right: 20px;
-    }
+    padding: 30px;
   }
 
   &__card {
-    width: 50%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     background-color: #fff;
     border: 1px solid #dcdcdc;
     margin: 0 auto;
@@ -213,29 +214,57 @@ body {
     padding-bottom: 20px;
     z-index: 1;
 
+    &__one {
+      padding-top: 60px;
+      padding-bottom: 40px;
+
+      .img-container {
+        position: relative;
+        width: 100%;
+      }
+
+      img {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+    &__two {
+      .img-container {
+        position: relative;
+        width: 100%;
+      }
+
+      img {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+    &__three {
+      width: 100%;
+    }
+
     .title {
-      width: 62%;
+      width: 100%;
       font-family: "Raleway", sans-serif;
       font-weight: 100;
+      padding: 0;
       text-align: left;
-      margin-left: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      margin-top: 20px;
+      margin-left: 0px;
     }
 
     .text {
-      width: 80%;
-      margin-left: 20px;
+      width: 100%;
       font-family: Arial, Helvetica, sans-serif;
       line-height: 22px;
       font-size: 15px;
       text-align: left;
+      margin-left: 0px;
     }
 
     .border {
-      width: 70%;
-      height: 4px;
-      margin-left: 20px;
-      margin-top: 40px;
+      display: none;
     }
 
     .bg {
@@ -243,127 +272,91 @@ body {
       z-index: -1;
 
       &--red {
-        height: 120px;
-        width: 120px;
-        border-radius: 20%;
-        right: 55px;
-        top: 40px;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
+        left: 60%;
+        top: -20px;
+        width: 25%;
+        height: 60%;
+        border-radius: 20px;
         transform: rotate(45deg);
         background-color: #fb3b64;
       }
 
       &--blue {
-        height: 260px;
-        width: 260px;
+        height: 100%;
+        width: 60%;
         border-radius: 100%;
-        left: 45px;
-        top: 15px;
+        top: -2px;
         background-color: #08a6e4;
       }
 
       &--green {
-        height: 328px;
-        width: 367px;
-        left: 580px;
-        top: -1px;
+        height: 160px;
+        width: 100%;
+        left: 0px;
+        top: 100%;
         border-radius: 5px;
         background-color: #55dfb4;
       }
     }
+  }
 
-    &__one {
-      padding-top: 80px;
-      padding-bottom: 60px;
-
-      img {
-        width: 40%;
-        margin-right: 40px;
-      }
-
-      .border {
-        background-color: #fb3b64;
-      }
-    }
-
-    &__two {
-      flex-direction: row;
-
-      .border {
-        background-color: #08a6e4;
-      }
-
-      img {
-        width: 45%;
-        margin-left: 20px;
-      }
-    }
-
-    &__three {
-      padding-top: 60px;
-      padding-bottom: 40px;
-      width: 60%;
-      margin-left: 0;
-
-      .border {
-        background-color: #55dfb4;
-      }
+  &__card-image {
+    display: block;
+    width: 100%;
+    .img {
+      position: relative;
+      z-index: 1;
+      margin-top: 0px;
+      margin-right: 0px;
     }
   }
 }
 
 .pricing {
   &__container {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   &__title {
     text-align: center;
     font-family: "Raleway", sans-serif;
     font-weight: 100;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 
   &__card-container {
-    display: flex;
-    margin: 0 auto;
-    gap: 60px;
-    width: 60%;
+    width: 100%;
+    display: block;
   }
 
   &__card {
+    margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     border-radius: 5%;
-    padding: 20px 20px 40px 20px;
+    padding: 20px 10px 60px 10px;
     position: relative;
 
     .text-container {
-      width: 40%;
-      margin: 0 auto;
+      display: inline-block;
       text-align: center;
-      margin-top: 10px;
-      margin-bottom: 70px;
-    }
-
-    .text-container.three {
-      margin-bottom: 40px;
+      width: 40%;
+      margin-right: 20px;
+      vertical-align: top;
+      margin-top: 30px;
     }
 
     .description {
-      text-align: center;
+      display: inline-block;
+      text-align: left;
       list-style-type: none;
-      width: 60%;
-      margin: 0 auto;
+      width: 51%;
       font-family: "Open Sans", sans-serif;
-      margin-bottom: 40px;
+      font-size: 14px;
 
       li {
-        margin-top: 25px;
+        margin-top: 10px;
 
         img {
           margin-right: 10px;
@@ -375,14 +368,12 @@ body {
       font-family: "Raleway", sans-serif;
       font-weight: 900;
       font-size: 20px;
-      margin-bottom: 10px;
     }
 
     .price {
       font-family: "Open sans", sans-serif;
       font-size: 40px;
       font-weight: 100;
-      margin-bottom: 10px;
     }
 
     .limited {
@@ -393,8 +384,8 @@ body {
 
     .btn-pricing {
       position: absolute;
-      top: 95%;
-      left: 27%;
+      top: 90%;
+      left: 25%;
       padding: 15px 60px;
       border: none;
       border-radius: 50px;
@@ -404,13 +395,10 @@ body {
       &--red {
         background-color: #fb3b64;
       }
-
       &--blue {
         background-color: #07ace6;
-        left: 30%;
-        top: 96%;
+        left: 27%;
       }
-
       &--green {
         background-color: #55dfb4;
       }
@@ -419,8 +407,6 @@ body {
     &--red {
       border: 1px solid #fb3b64;
       width: 80%;
-      max-height: 460px;
-      margin-top: 40px;
 
       .price {
         color: #fb3b64;
@@ -440,8 +426,6 @@ body {
     &--green {
       border: 1px solid #55dfb4;
       width: 80%;
-      max-height: 460px;
-      margin-top: 40px;
 
       .price {
         color: #55dfb4;
@@ -452,37 +436,31 @@ body {
 
 .contact {
   &__container {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
+    display: block;
     margin-top: 100px;
     margin-bottom: 60px;
-    padding-left: 20px;
 
     .text-container {
-      width: 20%;
+      width: 90%;
+      margin: 0 auto;
     }
 
     .title {
       font-family: "Raleway", sans-serif;
       font-weight: 400;
-      margin-bottom: 25px;
-      font-size: 40px;
+      margin-bottom: 10px;
+      font-size: 30px;
     }
-
     .text {
       font-family: "Open sans", sans-serif;
       margin-bottom: 30px;
     }
 
     .container-data {
-      display: flex;
-      gap: 20px;
+      display: block;
     }
 
     .contact-data {
-      display: flex;
-      align-items: center;
       font-family: "Open sans", sans-serif;
       color: #aaa3a3;
       margin-bottom: 10px;
@@ -493,9 +471,8 @@ body {
     }
 
     form {
-      margin-right: 20px;
-      width: 25%;
-
+      width: 90%;
+      margin: 0 auto;
       .label {
         display: block;
         margin-bottom: 10px;
@@ -531,7 +508,7 @@ body {
       }
 
       button {
-        width: 50%;
+        width: 70%;
         margin-top: 30px;
         padding: 20px 40px;
         border-radius: 50px;
@@ -549,12 +526,8 @@ body {
 }
 
 .checkbox {
-  margin-bottom: 70px;
-  margin-top: 30px;
-  padding-bottom: 40px;
-
   &__container {
-    position: absolute;
+    margin-top: 40px;
 
     input[type="checkbox"] {
       display: inline-block;
@@ -566,14 +539,14 @@ body {
       border: 1px solid #dcdcdc;
       border-radius: 5px;
       cursor: pointer;
-      margin-right: 20px;
+      margin-right: 10px;
       padding-left: 2.5px;
       padding-top: 2px;
     }
 
     label {
+      width: 85%;
       display: inline-block;
-      width: 45%;
       color: #afafaf;
       font-size: 12px;
       font-family: "Open Sans", sans-serif;
@@ -601,16 +574,16 @@ body {
 
 .footer {
   &__container {
-    background-color: #F7F7F7;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    display: block;
+    padding: 20px;
     box-shadow: 0px -10px 10px #dcdcdc;
   }
 
   &__text {
+    width: 60%;
+    display: inline-block;
+    margin-right: 15%;
+
     h1 {
       font-weight: 100;
       font-size: 30px;
@@ -627,559 +600,348 @@ body {
   }
 
   &__social {
-    display: flex;
-    gap: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+
+    .fb {
+      margin-right: 10px;
+    }
   }
 }
 
-//----------------MEDIA 380-----------------------------
+//---------------DESKTOP-------------------------------------
 
-@media (max-width: 1080px) {
-
+@media (min-width: 1200px) {
   .nav {
     &__container {
-      display: block;
-      text-align: center;
-      box-shadow: 0px 10px 10px #dcdcdc;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 5%;
+      padding-left: 0px;
+      padding-bottom: 0px;
     }
 
     &__title {
-      display: inline;
-      font-weight: 100;
-      font-size: 30px;
-      font-family: "Raleway", sans-serif;
-      margin-right: 100px;
-      margin-left: 10px;
-      color: #58bbde;
+      margin-bottom: 10px;
+      margin-right: 0;
     }
 
     &__list {
-      display: none;
-      margin-top: 20px;
-      list-style-type: none;
-      text-align: left;
-      padding-left: 35px;
-
-      &--active {
-        box-shadow: none;
-        display: block;
-      }
+      margin-top: 0px;
+      display: flex;
+      align-items: end;
+      gap: 100px;
+      padding: 0;
+      margin: 0;
     }
 
     &__li {
-      color: #cdcdcd;
-      margin-bottom: 14px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: smaller;
-      font-family: "Open Sans", sans-serif;
+      margin: 0;
+      padding-bottom: 20px;
     }
 
     &__item {
-      color: #cdcdcd;
-      font-size: 10px;
-      text-decoration: none;
-      padding: 0;
+      padding-bottom: 18px;
+    }
 
-      &--first {
-        color: black;
-        border: none;
-      }
-
-      :hover {
-        color: black;
-      }
+    &__item--first {
+      border-bottom: 3px solid #08a6e4;
     }
   }
 
   .btn {
-    border: none;
-    background: none;
-    display: inline;
-
-    &__menu--click {
-      display: none;
-    }
-
-    &__close {
-      display: none;
-
-      &--click {
-        display: none;
-      }
-    }
+    display: none;
   }
 
   .hero {
-    &__container {
-      width: 100%;
-      text-align: center;
-      margin-top: 100px;
-    }
-
-    &__title {
-      font-size: 40px;
-      font-weight: 100;
-      font-family: "Raleway", sans-serif;
-      margin-bottom: 30px;
-    }
-
     &__text {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 15px;
-      max-width: 250px;
-      margin: 0 auto;
-      line-height: 22px;
-      margin-bottom: 30px;
+      width: 100%;
     }
 
     &__button {
-      width: 80%;
-      background-color: #08a6e4;
-      color: #ffffff;
-      border-radius: 50px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 80px;
-      padding-right: 80px;
-      border: none;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 600;
-      box-shadow: 0px 3px 10px #31b6de;
-      margin-bottom: 40px;
-      cursor: pointer;
+      width: 20%;
+      margin-bottom: 0px;
     }
 
     &__img {
+      width: 90%;
       margin-top: 50px;
-      width: 375px;
-      height: 200px;
+      height: 550px;
     }
   }
 
   .why-us {
     &__container {
-      text-align: center;
-      font-family: "Raleway", sans-serif;
-      margin-bottom: 0px;
+      margin-bottom: 80px;
     }
 
     &__title {
-      font-weight: 100;
-      line-height: 42px;
-      max-width: 270px;
+      max-width: 50%;
       text-align: center;
-      margin: 0 auto;
-      margin-top: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 100px;
     }
 
     &__numbers {
-      display: block;
-
-      h1 {
-        font-weight: 900;
-        font-size: 20px;
-        letter-spacing: 10px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-      }
-
-      p {
-        color: #a5a5a5;
-        max-width: 150px;
-        margin: 0 auto;
-        margin-bottom: 40px;
-      }
+      display: flex;
+      justify-content: center;
+      gap: 150px;
     }
   }
 
   .dot {
-    &__container {
-      position: relative;
-    }
-    width: 55px;
     border-radius: 50%;
-    position: absolute;
-    z-index: -1;
-    left: 140px;
-    top: -3px;
+    left: 30px;
 
-    &--red {
-      background-color: #fb3b64;
-    }
     &--blue {
-      background-color: #08a6e4;
+      left: 40px;
     }
+
     &--green {
-      background-color: #55dfb4;
+      left: 10px;
     }
   }
 
   .benefits {
     &__container {
-      width: 100%;
-      background-color: #f7f7f7;
-      text-align: center;
-      margin-top: 40px;
-      padding: 30px;
-    }
-
-    &__card-image {
-      display: block;
-      width: 100%;
-      .img {
-        position: relative;
-        z-index: 1;
-        margin-top: 0px;
-        margin-right: 0px;
-      }
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 100px;
+      padding-bottom: 100px;
     }
 
     &__card {
-      display: block;
-      width: 100%;
-      background-color: #fff;
-      border: 1px solid #dcdcdc;
-      margin: 0 auto;
-      position: relative;
-      padding: 20px;
-      margin-top: 40px;
-      padding-bottom: 20px;
-      z-index: 1;
+      width: 50%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
 
-      .title {
-        width: 100%;
-        font-family: "Raleway", sans-serif;
-        font-weight: 100;
-        padding: 0;
-        text-align: left;
-        margin-bottom: 40px;
-        margin-top: 20px;
-        margin-left: 0px;
-      }
+      &__one {
+        padding-top: 80px;
+        padding-bottom: 60px;
 
-      .text {
-        width: 100%;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 22px;
-        font-size: 15px;
-        text-align: left;
-        margin-left: 0px;
-      }
-
-      .border {
-        display: none;
-      }
-
-      .bg {
-        position: absolute;
-        z-index: -1;
-
-        &--red {
-          height: 80px;
-          width: 80px;
-          border-radius: 20%;
-          right: 60px;
-          top: 50px;
-          -webkit-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-          transform: rotate(45deg);
-          background-color: #fb3b64;
+        img {
+          width: 100%;
+          margin-right: 40px;
         }
 
-        &--blue {
-          height: 140px;
-          width: 140px;
-          border-radius: 100%;
-          left: 65px;
-          top: 15px;
+        .border {
+          background-color: #fb3b64;
+        }
+      }
+
+      &__two {
+        flex-direction: row;
+
+        .border {
           background-color: #08a6e4;
         }
 
-        &--green {
-          height: 160px;
-          width: 314px;
-          left: 0px;
-          top: 335px;
-          border-radius: 5px;
+        img {
+          width: 100%;
+          margin-left: 20px;
+        }
+      }
+
+      &__three {
+        padding-top: 80px;
+        padding-bottom: 60px;
+        min-width: 50%;
+        margin-left: 0;
+
+        .border {
           background-color: #55dfb4;
         }
       }
-      &__one {
-        padding-top: 60px;
-        padding-bottom: 40px;
 
-        img {
-          width: 70%;
-          margin-right: 0px;
+      .title {
+        width: 62%;
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      .text {
+        width: 80%;
+        margin-left: 20px;
+      }
+
+      .border {
+        display: block;
+        width: 70%;
+        height: 4px;
+        margin-left: 20px;
+        margin-top: 40px;
+      }
+
+      .bg {
+        &--red {
+          left: 60%;
+          top: -20px;
+          width: 40%;
+          height: 60%;
+        }
+
+        &--blue {
+          height: 100%;
+          width: 90%;
+          top: -2px;
+        }
+
+        &--green {
+          height: 100%;
+          width: 96%;
+          left: 105%;
+          top: -1px;
         }
       }
-      &__two {
-        img {
-          width: 70%;
-          margin-left: 0px;
-        }
-      }
-      &__three {
-        width: 100%;
+    }
+
+    &__card-image {
+      position: relative;
+      margin: 0 auto; 
+      display: flex;
+      align-items: center;
+      width: 50%;
+
+      .img {
+        position: absolute;
+        left: 60%;
+        top: 30%;
       }
     }
   }
 
   .pricing {
     &__container {
-      margin-top: 0px;
-      margin-bottom: 0px;
+      margin-top: 100px;
+      margin-bottom: 100px;
     }
 
     &__title {
-      text-align: center;
-      font-family: "Raleway", sans-serif;
-      font-weight: 100;
-      margin-bottom: 0px;
+      margin-bottom: 40px;
     }
 
     &__card-container {
-      width: 100%;
-      display: block;
-      padding-right: 0px;
-      padding-left: 0px;
+      display: flex;
+      margin: 0 auto;
+      gap: 60px;
+      width: 60%;
     }
 
     &__card {
-      margin: 0 auto;
-      margin-top: 20px;
-      margin-bottom: 80px;
-      border-radius: 5%;
-      padding: 20px 10px 60px 10px;
-      position: relative;
+      text-align: center;
+      padding: 20px 20px 40px 20px;
 
       .text-container {
-        display: inline-block;
-        width: 40%;
-        margin-right: 20px;
-        vertical-align: top;
-        margin-top: 30px;
-        margin-bottom: 0px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+      }
+
+      .text-container.three {
+        margin-bottom: 30px;
       }
 
       .description {
-        display: inline-block;
-        text-align: left;
-        list-style-type: none;
-        width: 51%;
-        font-family: "Open Sans", sans-serif;
-        margin-bottom: 0px;
-        font-size: 14px;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 40px;
 
         li {
-          margin-top: 10px;
-
-          img {
-            margin-right: 10px;
-          }
+          margin-top: 25px;
         }
       }
 
       .title {
-        font-family: "Raleway", sans-serif;
-        font-weight: 900;
-        font-size: 20px;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
       }
 
       .price {
-        font-family: "Open sans", sans-serif;
-        font-size: 40px;
-        font-weight: 100;
-        margin-bottom: 0px;
-      }
-
-      .limited {
-        font-family: "Open Sans", sans-serif;
-        font-weight: 900;
-        font-size: 12px;
+        margin-bottom: 10px;
       }
 
       .btn-pricing {
-        position: absolute;
-        top: 90%;
-        left: 25%;
+        top: 95%;
+        left: 27%;
         padding: 15px 60px;
-        border: none;
-        border-radius: 50px;
-        color: #ffffff;
-        cursor: pointer;
 
-        &--red {
-          background-color: #fb3b64;
-        }
         &--blue {
-          background-color: #07ace6;
-          left: 27%;
-        }
-        &--green {
-          background-color: #55dfb4;
-        }
-      }
-
-      &--red {
-        border: 1px solid #fb3b64;
-        width: 80%;
-
-        .price {
-          color: #fb3b64;
-        }
-      }
-
-      &--blue {
-        border: 1px solid #07ace6;
-        width: 90%;
-        box-shadow: 1px 1px 10px #07ace6;
-
-        .price {
-          color: #07ace6;
+          left: 30%;
+          top: 96%;
         }
       }
 
       &--green {
-        border: 1px solid #55dfb4;
-        width: 80%;
+        max-height: 460px;
+        margin-top: 40px;
+      }
 
-        .price {
-          color: #55dfb4;
-        }
+      &--red {
+        max-height: 460px;
+        margin-top: 40px;
       }
     }
   }
 
   .contact {
     &__container {
-      display: block;
-      margin-top: 100px;
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      padding-left: 20px;
       margin-bottom: 60px;
 
       .text-container {
-        width: 90%;
+        width: 100%;
       }
 
       .title {
-        font-family: "Raleway", sans-serif;
-        font-weight: 400;
-        margin-bottom: 10px;
-        font-size: 30px;
+        margin-bottom: 25px;
+        font-size: 40px;
       }
+
       .text {
         font-family: "Open sans", sans-serif;
         margin-bottom: 30px;
       }
 
       .container-data {
-        display: block;
+        display: flex;
+        gap: 20px;
       }
 
       .contact-data {
-        font-family: "Open sans", sans-serif;
-        color: #aaa3a3;
-        margin-bottom: 10px;
-      }
-
-      img {
-        margin-right: 10px;
+        display: flex;
+        align-items: center;
       }
 
       form {
-        width: 90%;
         margin-right: 20px;
-
-        .label {
-          display: block;
-          margin-bottom: 10px;
-          margin-top: 30px;
-          font-family: "Open sans", sans-serif;
-          color: #08a6e4;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-        }
-
-        .input {
-          width: 100%;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          -ms-appearance: none;
-          appearance: none;
-          outline: 0;
-          box-shadow: none;
-          border-top: 0;
-          border-left: 0;
-          border-right: 0;
-          background-image: none;
-          color: #000;
-          font-size: 1em;
-          border-bottom: 1px #d3d3d3 solid;
-          font-family: "Open sans", sans-serif;
-        }
-
-        .btn-container {
-          width: 100%;
-          display: inline-block;
-          text-align: end;
-        }
+        width: 100%;
 
         button {
-          width: 70%;
-          margin-top: 30px;
-          padding: 20px 40px;
-          border-radius: 50px;
-          background-color: #08a6e4;
-          border: none;
-          color: #fff;
-          font-family: "Open Sans", sans-serif;
-          font-weight: 900;
-          cursor: pointer;
-          box-shadow: 0px 5px 15px #08a6e4;
-          margin-right: 10px;
+          width: 50%;
         }
       }
     }
   }
 
   .checkbox {
-    margin-bottom: 100px;
     margin-top: 30px;
-    padding-bottom: 70px;
 
     &__container {
-      position: absolute;
-
-      input[type="checkbox"] {
-        display: inline-block;
-        vertical-align: top;
-        appearance: none;
-        -webkit-appearance: none;
-        height: 20px;
-        width: 20px;
-        border: 1px solid #dcdcdc;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-right: 20px;
-        padding-left: 2.5px;
-        padding-top: 2px;
-      }
+      display: flex;
 
       label {
-        display: inline-block;
-        width: 75%;
-        color: #afafaf;
-        font-size: 12px;
-        font-family: "Open Sans", sans-serif;
-        cursor: pointer;
+        width: 90%;
       }
 
       input[type="checkbox"]:after {
@@ -1200,40 +962,21 @@ body {
       }
     }
   }
-}
 
-.footer {
-  &__container {
-    display: block;
-    padding: 20px;
-    box-shadow: 0px -10px 10px #dcdcdc;
-  }
-
-  &__text {
-    display: inline-block;
-    margin-right: 20%;
-
-    h1 {
-      font-weight: 100;
-      font-size: 30px;
-      font-family: "Raleway", sans-serif;
-      color: #58bbde;
-      margin-bottom: 5px;
+  .footer {
+    &__container {
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 170px;
+      padding-bottom: 20px;
+      padding-top: 20px;
     }
-    p {
-      color: #aaa3a3;
-      font-family: "Open Sans", sans-serif;
-      font-size: 12px;
-    }
-  }
 
-  &__social {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 15px;
-
-    .fb {
-      margin-right: 10px;
+    &__social {
+      display: flex;
+      gap: 20px;
     }
   }
 }
