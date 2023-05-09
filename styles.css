@@ -9,6 +9,15 @@ body {
   margin: 0 auto;
 }
 
+.progressBar {
+  z-index: 2;
+  width: 100%;
+  height: 3px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .nav__container {
   display: block;
   text-align: left;
@@ -285,7 +294,7 @@ body {
 .pricing__card {
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   border-radius: 5%;
   padding: 20px 10px 60px 10px;
   position: relative;
@@ -429,6 +438,11 @@ body {
   border-bottom: 1px #d3d3d3 solid;
   font-family: "Open sans", sans-serif;
 }
+.contact__container form .container-input.incorrect {
+  border: 1px solid #fb3b64;
+  border-radius: 5px;
+  color: #fb3b64;
+}
 .contact__container form .btn-container {
   width: 100%;
   display: inline-block;
@@ -488,6 +502,21 @@ body {
 }
 .checkbox__container input[type=checkbox]:checked:after {
   display: inline-block;
+}
+
+.btn-back {
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 3px;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
 }
 
 .footer__container {
@@ -731,11 +760,11 @@ body {
     top: 96%;
   }
   .pricing__card--green {
-    max-height: 460px;
+    max-height: 480px;
     margin-top: 40px;
   }
   .pricing__card--red {
-    max-height: 460px;
+    max-height: 480px;
     margin-top: 40px;
   }
   .contact__container {

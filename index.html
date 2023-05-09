@@ -17,6 +17,7 @@
   </head>
   <body>
     <header>
+      <div class="progressBar" id="progressBar"></div>
       <nav class="nav__container">
         <h1 class="nav__title">OXYGENShop</h1>
         <button class="btn btn__menu" id="open">
@@ -209,14 +210,18 @@
             </p>
           </div>
         </div>
-        <form action="">
+        <form action="" id="form">
           <label class="label" for="name">Name</label>
-          <input class="input" type="text" name="y_name" id="" />
+          <div class="container-input" id="container-name">
+            <input class="input" type="text" name="fname" id="fname" />
+          </div>
           <label class="label" for="email">Email</label>
-          <input class="input" type="text" name="email" id="" />
+          <div class="container-input" id="container-email">
+            <input class="input" type="text" name="email" id="email" />
+          </div>
           <div class="checkbox">
             <div class="checkbox__container">
-              <input type="checkbox" id="check" />
+              <input type="checkbox" id="checkbox" />
               <label for="check"
                 >I hereby give consent for my personal data included in my
                 application to be processed for the purposes of the recruitment
@@ -229,10 +234,11 @@
             </div>
           </div>
           <div class="btn-container">
-            <button>Send</button>
+            <button type="submit">Send</button>
           </div>
         </form>
       </div>
+      <button class="btn-back" id="btn_back">Return to the top</button>
       <div class="footer__container">
         <div class="footer__text">
           <h1>OXYGENShop</h1>
@@ -245,5 +251,6 @@
       </div>
     </main>
     <script src="./js/main.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
