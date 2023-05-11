@@ -1,6 +1,9 @@
 import { useScrollPercentage } from "./scrollPercentage.js";
 
 const modal = document.getElementById("modal");
+const h1_modal = document.getElementById("h1_modal");
+const btn_modal = document.getElementById("btn_modal");
+const email_modal = document.getElementById("email_modal");
 const main = document.getElementsByTagName("main")[0];
 const header = document.getElementsByTagName("header")[0];
 const nav_item = document.getElementsByClassName("nav__li");
@@ -26,7 +29,7 @@ const closeModal = () => {
   }
 };
 
-const scroll25 = () => {
+const scrollTwentyFive = () => {
   if (!window.localStorage.getItem("modal")) {
     if (useScrollPercentage() === 25) {
       showModal();
@@ -41,16 +44,27 @@ window.onkeydown = function (event) {
     closeModal();
   }
 };
-window.onclick = function (event) {
-    console.log(event.target)
-  if (event.target === main || event.target === header) {
-    closeModal();
-  }
-};
 
-if(!window.localStorage.getItem("modal")) {
-    setTimeout(showModal, 5000);
-    window.localStorage.setItem("modal", showModal)
+function clickWindow (e) {
+    if (window.localStorage.getItem("modal")) {
+      console.log(e.target);
+      if (
+        e.target !== modal &&
+        e.target !== h1_modal &&
+        e.target !== btn_modal &&
+        e.target !== email_modal
+      ) {
+        closeModal();
+        window.removeEventListener("click", clickWindow)
+      }
+    }
+  }
+
+  window.addEventListener("click", clickWindow)
+
+if (!window.localStorage.getItem("modal")) {
+  setTimeout(showModal, 5000);
+  window.localStorage.setItem("modal", showModal);
 }
 
-window.addEventListener("scroll", scroll25);
+window.addEventListener("scroll", scrollTwentyFive);

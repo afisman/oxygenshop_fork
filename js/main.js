@@ -1,4 +1,5 @@
 import { useScrollPercentage } from "./scrollPercentage.js"
+import { getCurrency } from "./currency.js"
 
 const list = document.getElementById("list")
 const open = document.getElementById("open")
@@ -33,10 +34,12 @@ const scrollToTop = async () => {
     await sleep(200);
     window.scrollTo({top: 0, behavior: 'smooth'})
 }
-
 btn_back.addEventListener("click", scrollToTop);
 
 
+//Scroll Viewport
 window.addEventListener('scroll', scrollPercentage);
 
 
+//Currency format
+getCurrency()

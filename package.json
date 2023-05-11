@@ -4,16 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 3000\" \"open http://localhost:3000/build\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^8.0.1",
+    "http-server": "^14.1.1",
     "sass": "^1.62.1"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.10.5"
+    "bootstrap-icons": "^1.10.5",
+    "express": "^4.18.2"
   }
 }
-
