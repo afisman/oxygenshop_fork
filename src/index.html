@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="progressBar" id="progressBar"></div>
+      <nav class="nav__container">
+        <h1 class="nav__title">OXYGENShop</h1>
+        <button class="btn btn__menu" id="open">
+          <img src="./assets/menu.png" alt="" width="26" />
+        </button>
+        <button class="btn btn__close--click" id="close">
+          <img src="./assets/close.png" alt="" width="22" />
+        </button>
+        <ul class="nav__list" id="list" >
+          <li class="nav__li nav__li--first">
+            <a class="nav__item nav__item--first" href="#why-us">Why&nbspUs</a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="#benefits">Benefits</a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="#pricing">Prices</a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="modal-popup" id="modal">
+        <h1 id="h1_modal">¡Subscribe to our newsletter!</h1>
+        <div class="container" >
+          <input type="text" name="newsEmail" id="email_modal">
+          <button id="btn_modal">Sign Up</button>
+        </div>
+        <img src="./assets/close.png" alt="" id="close_modal"/>
+    </div>
+    <main>
+      <div class="hero__container">
+        <h1 class="hero__title">Sell More!</h1>
+        <p class="hero__text">
+          Open shop on our platform and increase your sales
+        </p>
+        <button class="hero__button">Open your shop</button>
+        <img class="hero__img" src="./assets/bg.png" alt="" />
+      </div>
+      <div class="why-us__container" id="why-us">
+        <h1 class="why-us__title">
+          The most popular sales platform in country
+        </h1>
+        <div class="why-us__numbers">
+          <div class="">
+            <div class="dot__container">
+              <span class="dot dot--red"></span>
+              <img src="./assets/user.png" width="55" />
+            </div>
+            <h1>100000+</h1>
+            <p>daily entries</p>
+          </div>
+          <div>
+            <div class="dot__container">
+              <span class="dot dot--blue"></span>
+              <img src="./assets/eye.png" alt="" width="55" />
+            </div>
+            <h1>2000000+</h1>
+            <p>seen products every day</p>
+          </div>
+          <div>
+            <div class="dot__container">
+              <span class="dot dot--green"></span>
+              <img src="./assets/sheets.png" alt="" width="45" />
+            </div>
+            <h1>10000+</h1>
+            <p>added posts daily</p>
+          </div>
+        </div>
+      </div>
+      <div class="benefits__container" id="benefits">
+        <div class="benefits__card benefits__card__one">
+          <div class="img-container">
+            <span class="bg bg--red"></span>
+            <img src="./assets/mac.png" alt="" />
+          </div>
+          <div class="text-container">
+            <h1 class="title">Be always First</h1>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+              quam repudiandae non magni dolores eveniet error impedit ex illum!
+              Nobis.
+            </p>
+            <div class="border"></div>
+          </div>
+        </div>
+        <div class="benefits__card benefits__card__two">
+          <div class="img-container">
+            <span class="bg bg--blue"></span>
+            <img src="./assets/iphone.png" alt="" />
+          </div>
+          <div class="text-container">
+            <h1 class="title">Your shop is where you are!</h1>
+            <p class="text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+              perferendis laborum provident possimus quasi labore placeat velit
+              repellendus mollitia asperiores.
+            </p>
+            <div class="border"></div>
+          </div>
+        </div>
+        <div class="benefits__card-image">
+          <div class="benefits__card benefits__card__three">
+            <div class="text-container">
+              <h1 class="title">Increase recognition your brand!</h1>
+              <p class="text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt, architecto ab incidunt totam animi tempore magnam
+                similique repellendus at quo voluptate expedita error? Odit,
+                quae quaerat. Dolores, quis? Aliquid quam quas.
+              </p>
+              <div class="border"></div>
+            </div>
+            <span class="bg bg--green"></span>
+          </div>
+          <img class="img" src="./assets/trumpet.png" alt="" />
+        </div>
+      </div>
+      <div class="pricing__container" id="pricing">
+        <h1 class="pricing__title">Pricing</h1>
+        <div class="pricing__card-container">
+          <div class="pricing__card pricing__card--red">
+            <div class="text-container">
+              <h1 class="title">Basic</h1>
+              <p class="price"><span class="currency">$</span>0</p>
+            </div>
+            <ul class="description">
+              <li><img src="./assets/check.png" width="16" />100 MB HDD</li>
+              <li><img src="./assets/check.png" width="16" />1 Subdomain</li>
+              <li><img src="./assets/check.png" width="16" />2 E-mails</li>
+              <li>
+                <img src="./assets/cross.png" width="16" />Two years licence
+              </li>
+              <li><img src="./assets/cross.png" width="16" />Full support</li>
+            </ul>
+            <button class="btn-pricing btn-pricing--red">Begin</button>
+          </div>
+          <div class="pricing__card pricing__card--blue">
+            <div class="text-container">
+              <h1 class="title">Professional</h1>
+              <p class="price"><span class="currency">$</span>25</p>
+              <p class="limited">Limited offer</p>
+            </div>
+            <ul class="description">
+              <li><img src="./assets/check.png" width="16" />500 MB HDD</li>
+              <li><img src="./assets/check.png" width="16" />2 Subdomains</li>
+              <li><img src="./assets/check.png" width="16" />5 E-mails</li>
+              <li>
+                <img src="./assets/check.png" width="16" />One year licence
+              </li>
+              <li><img src="./assets/cross.png" width="16" />Full support</li>
+            </ul>
+            <button class="btn-pricing btn-pricing--blue">Begin</button>
+          </div>
+          <div class="pricing__card pricing__card--green">
+            <div class="text-container three">
+              <h1 class="title">Premium</h1>
+              <p class="price"><span class="currency">$</span>60</p>
+              <p class="limited">Limited offer</p>
+            </div>
+            <ul class="description">
+              <li><img src="./assets/check.png" width="16" />2 GB HDD</li>
+              <li><img src="./assets/check.png" width="16" />5 Subdomains</li>
+              <li><img src="./assets/check.png" width="16" />20 E-mails</li>
+              <li>
+                <img src="./assets/check.png" width="16" />Two years licence
+              </li>
+              <li><img src="./assets/check.png" width="16" />Full support</li>
+            </ul>
+            <button class="btn-pricing btn-pricing--green">Begin</button>
+          </div>
+        </div>
+      </div>
+      <div class="contact__container" id="contact">
+        <div class="text-container">
+          <h1 class="title">Any questions?</h1>
+          <p class="text">Leave your email address or call us!</p>
+          <div class="container-data">
+            <p class="contact-data">
+              <img src="./assets/email.png" />info@bestshop.xyz
+            </p>
+            <p class="contact-data">
+              <img src="./assets/phone.png" />123 456 789
+            </p>
+          </div>
+        </div>
+        <form action="" id="form">
+          <label class="label" for="name">Name</label>
+          <div class="container-input" id="container-name">
+            <input class="input" type="text" name="fname" id="fname" />
+          </div>
+          <label class="label" for="email">Email</label>
+          <div class="container-input" id="container-email">
+            <input class="input" type="text" name="email" id="email" />
+          </div>
+          <div class="checkbox">
+            <div class="checkbox__container">
+              <input type="checkbox" id="checkbox" />
+              <label for="check"
+                >I hereby give consent for my personal data included in my
+                application to be processed for the purposes of the recruitment
+                process under the European Parliament’s and Council of the
+                European Union Regulation on the Protection of Natural Persons
+                as of 27 April 2016, with regard to the processing of personal
+                data and on the free movement of such data, and repealing
+                Directive 95/46/EC (Data Protection Directive)</label
+              >
+            </div>
+          </div>
+          <div class="btn-container">
+            <button type="submit">Send</button>
+          </div>
+          <div class="error" id="error"></div>
+        </form>
+      </div>
+      <button class="btn-back" id="btn_back">Return to the top</button>
+      <div class="footer__container">
+        <div class="footer__text">
+          <h1>OXYGENShop</h1>
+          <p>® 2023 Oxygen, All Rights Reserved</p>
+        </div>
+        <div class="footer__social">
+          <img class="fb" src="./assets/fb.png" alt="" width="25" />
+          <img src="./assets/twitter.png" alt="" width="25" />
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/form.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+  </body>
+</html>
