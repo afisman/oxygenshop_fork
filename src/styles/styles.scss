@@ -153,6 +153,7 @@ body {
       font-weight: 900;
     }
   }
+
   img {
     position: absolute;
     top: 8px;
@@ -246,6 +247,7 @@ body {
   &__container {
     position: relative;
   }
+
   height: 55px;
   width: 55px;
   border-radius: 50%;
@@ -257,9 +259,11 @@ body {
   &--red {
     background-color: #fb3b64;
   }
+
   &--blue {
     background-color: #08a6e4;
   }
+
   &--green {
     background-color: #55dfb4;
   }
@@ -299,6 +303,7 @@ body {
         margin: 0 auto;
       }
     }
+
     &__two {
       .img-container {
         position: relative;
@@ -310,6 +315,7 @@ body {
         margin: 0 auto;
       }
     }
+
     &__three {
       width: 100%;
     }
@@ -374,6 +380,7 @@ body {
   &__card-image {
     display: block;
     width: 100%;
+
     .img {
       position: relative;
       z-index: 1;
@@ -493,10 +500,12 @@ body {
       &--red {
         background-color: #fb3b64;
       }
+
       &--blue {
         background-color: #07ace6;
         left: 27%;
       }
+
       &--green {
         background-color: #55dfb4;
       }
@@ -552,9 +561,11 @@ body {
       position: absolute;
       left: 0;
     }
+
     .image-slider.active {
       display: block;
     }
+
     .btn-slider {
       background: rgba(0, 0, 0, 0.5);
       width: 100%;
@@ -582,6 +593,7 @@ body {
       }
     }
   }
+
   &__dots {
     width: 90%;
     padding-bottom: 10px;
@@ -592,6 +604,7 @@ body {
     align-items: center;
     gap: 10px;
     background-color: #000;
+
     .dot-slider {
       position: initial;
       z-index: 1;
@@ -599,6 +612,7 @@ body {
       width: 8px;
       background-color: #bbb;
       border-radius: 50%;
+
       &--active {
         background-color: #fff;
       }
@@ -623,6 +637,7 @@ body {
       margin-bottom: 10px;
       font-size: 30px;
     }
+
     .text {
       font-family: "Open sans", sans-serif;
       margin-bottom: 30px;
@@ -646,6 +661,7 @@ body {
       width: 90%;
       margin: 0 auto;
       position: relative;
+
       .label {
         display: block;
         margin-bottom: 10px;
@@ -772,13 +788,19 @@ body {
   letter-spacing: 3px;
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 20%;
   text-align: center;
   margin-bottom: 30px;
   margin-top: 20px;
   padding: 20px;
   cursor: pointer;
   border: none;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: #08a6e4;
+    color: white;
+  }
 }
 
 .footer {
@@ -1126,11 +1148,13 @@ body {
     &__images-container {
       height: 500px;
       width: 50%;
+
       img {
         height: 85%;
         width: 100%;
       }
     }
+
     &__dots {
       gap: 10px;
       height: 10px;
@@ -1139,6 +1163,7 @@ body {
       width: 50%;
       margin: 0 auto;
       padding-bottom: 20px;
+
       .dot-slider {
         position: initial;
         z-index: 1;
